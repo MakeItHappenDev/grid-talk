@@ -1,7 +1,7 @@
 .hero {
   background-color:black;
   color:white;
-  background-image: url('/tutur.JPG');
+  background-image: url('/tutur.jpg');
   background-size: cover;
   background-position: 50% 50%;
   padding-top:calc(100% / 16 * 9);

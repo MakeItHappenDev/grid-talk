@@ -1,5 +1,6 @@
 body {
   background-color: #303030;
+  min-height:100vh;
   display:grid;
   grid-template:
   "nav" auto
@@ -18,7 +19,15 @@ body {
     "..... ..... hero" 1fr
     "footer footer footer" auto
     /1fr   1fr     2fr;
-    min-height:100vh;
+  }
+  @media screen AND (min-width:1200px){
+    grid-template:
+    "nav main hero" auto
+    "nav main hero" auto
+    "nav video hero" auto
+    "footer image hero" auto
+    "footer ..... hero" 1fr
+    /min-content 1fr 1fr;
   }
   > aside {
     grid-area:hero

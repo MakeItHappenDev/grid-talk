@@ -5,4 +5,8 @@
   background-color: black;
   grid-template-columns: repeat(auto-fit,minmax(50px, 1fr));
   justify-items: center;
+  @media screen AND (min-width:1200px){
+    grid-template-rows: auto auto auto auto auto 1fr;
+    justify-items: left;
+  }
 }
