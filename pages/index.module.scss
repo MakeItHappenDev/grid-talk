@@ -1,6 +1,14 @@
-:global(#___next){
-  background-color: yellow;
-  .test{
+body {
+    background-color: #303030;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    .test{
+      background-color: yellowgreen;
+    }
+  }
+
+  body > div.test{
     background-color: yellowgreen;
   }
-}

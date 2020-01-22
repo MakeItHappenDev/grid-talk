@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './index.module.css'
+import styles from './index.module.scss'
 
 
 import Hero from '../components/hero'
@@ -8,13 +8,15 @@ import Nav from '../components/nav'
 import Footer from '../components/footer'
 
 const Home = () => {
-
+  //return (
+  //  <article id={styles.grid}/>
+  //)
   return (
     <>
-    <Hero />
-    <Main />
-    <Nav />
-    <Footer />
+      <Hero />
+      <Main />
+      <Nav As="nav"/>
+      <Footer />
     </>
   );
 };

@@ -1,7 +1,15 @@
 import React from 'react'
 
-export default () => {
+import styles from './nav.module.css'
+
+export default ({As = "nav"}) => {
   return (
-    <nav>NAV</nav>
+    <As className={styles.nav}>
+      <a>Resume</a>
+      <a>Porfolio</a>
+      <a>Tweeter</a>
+      <a>Youtube</a>
+      <a>Twitch</a>
+    </As>
   )
 }
