@@ -1,21 +1,20 @@
 import React from 'react';
-import styles from './index.module.scss'
-
+import './index.module.scss'
 
 import Hero from '../components/hero'
 import Main from '../components/main'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import Section from '../components/section'
 
 const Home = () => {
-  //return (
-  //  <article id={styles.grid}/>
-  //)
   return (
     <>
-      <Hero />
-      <Main />
-      <Nav As="nav"/>
+      <Hero As="aside"/>
+      <Main/>
+      <Nav/>
+      <Section />
+      <Section />
       <Footer />
     </>
   );

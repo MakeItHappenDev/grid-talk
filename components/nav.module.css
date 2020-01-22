@@ -1,5 +1,8 @@
 .nav{
   color:red;
   display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+  padding:0.5rem;
+  background-color: black;
+  grid-template-columns: repeat(auto-fit,minmax(50px, 1fr));
+  justify-items: center;
 }

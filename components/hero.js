@@ -2,8 +2,8 @@ import React from 'react'
 
 import styles from './hero.module.css'
 
-export default () => {
+export default ({As = "aside"}) => {
   return(
-    <header>HERO IMAGE + CTA</header>
+    <As className={styles.hero} />
   )
 }

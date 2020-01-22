@@ -1,14 +1,41 @@
 body {
-    background-color: #303030;
-    min-height: 100vh;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    .test{
-      background-color: yellowgreen;
-    }
+  background-color: #303030;
+  display:grid;
+  grid-template:
+  "nav" auto
+  "hero" auto
+  "main" auto
+  "video" auto
+  "image" auto
+  "..." 1fr
+  "footer" auto
+  / 1fr;
+  @media screen AND (min-width:768px){
+    grid-template:
+    "nav  nav  nav" auto
+    "main  main   hero" auto
+    "video image hero" auto
+    "..... ..... hero" 1fr
+    "footer footer footer" auto
+    /1fr   1fr     2fr;
+    min-height:100vh;
   }
-
-  body > div.test{
-    background-color: yellowgreen;
+  > aside {
+    grid-area:hero
   }
+  > main {
+    grid-area:main
+  }
+  > footer {
+    grid-area:footer
+  }
+  > section:first-of-type{
+    grid-area:video
+  }
+  > section:nth-last-of-type(2){
+    grid-area:image
+  }
+  > nav {
+    grid-area: nav
+  }
+}
